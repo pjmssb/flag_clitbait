@@ -16,9 +16,7 @@
     "*://*.xataka.com/*/",
     "*://news.google.com/*",
     "*://*.twitter.com/*",
-    "*://*.x.com/*",
-    "*://news.*.com/*",
-    "*://noticias.*.com/*"
+    "*://*.x.com/*"
   ],
   "content_scripts": [
     {
@@ -28,9 +26,7 @@
         "*://*.xataka.com/*/",
         "*://news.google.com/*",
         "*://*.twitter.com/*",
-        "*://*.x.com/*",
-        "*://news.*.com/*",
-        "*://noticias.*.com/*"
+        "*://*.x.com/*"
       ],
       "js": ["content.js"],
       "css": ["style.css"],
