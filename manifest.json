@@ -11,23 +11,22 @@
     "scripting"
   ],
   "host_permissions": [
-    "*://*.youtube.com/*",
-    "*://*.facebook.com/*",
-    "*://*.xataka.com/*",
-    "*://*.google.com/*",
+    "*://*.youtube.com/watch*",
+    "*://*.facebook.com/*/posts/*",
+    "*://*.xataka.com/*/",
+    "*://news.google.com/*",
     "*://*.twitter.com/*",
     "*://*.x.com/*",
     "*://news.*.com/*",
     "*://noticias.*.com/*"
-    
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.youtube.com/*",
-        "*://*.facebook.com/*",
-        "*://*.xataka.com/*",
-        "*://*.google.com/*",
+        "*://*.youtube.com/watch*",
+        "*://*.facebook.com/*/posts/*",
+        "*://*.xataka.com/*/",
+        "*://news.google.com/*",
         "*://*.twitter.com/*",
         "*://*.x.com/*",
         "*://news.*.com/*",
@@ -43,6 +42,7 @@
       "48": "icons/icon48.png"
     },
     "default_title": "Clickbait Warner"
-    // No popup is defined for this MVP, so clicking the icon does nothing by default.
-  }
+  },
+  "author": "Your Name",
+  "homepage_url": "https://github.com/yourusername/flag_clitbait"
 }
