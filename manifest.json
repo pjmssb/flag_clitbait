@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Clickbait Warner MVP",
+  "version": "0.1.1",
+  "description": "Flags potential clickbait links and titles on web pages.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.facebook.com/*",
+    "*://*.xataka.com/*",
+    "*://*.google.com/*",
+    "*://*.twitter.com/*",
+    "*://*.x.com/*",
+    "*://news.*.com/*",
+    "*://noticias.*.com/*"
+    
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.facebook.com/*",
+        "*://*.xataka.com/*",
+        "*://*.google.com/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://news.*.com/*",
+        "*://noticias.*.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "48": "icons/icon48.png"
+    },
+    "default_title": "Clickbait Warner"
+    // No popup is defined for this MVP, so clicking the icon does nothing by default.
+  }
+}

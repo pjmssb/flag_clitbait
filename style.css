@@ -1,0 +1,38 @@
+/* style.css */
+
+/* Style for the element identified as potential clickbait */
+.potential-clickbait-flagged {
+  /* Example 1: A subtle orange left border. Adjust color and thickness as needed. */
+  border-left: 3px solid orange !important; /* !important can help override site styles */
+  padding-left: 6px !important; /* Add some space so content isn't too close to the border */
+  
+  /* Example 2: A light yellow background (can be too intrusive, use with care) */
+  /* background-color: #fffacd !important; /* LightYellow */
+  
+  /* Example 3: Dashed outline (can sometimes look messy) */
+  /* outline: 2px dashed #ffA500 !important; */
+  /* outline-offset: 2px !important; */
+}
+
+/* Style for the text label "[Potential Clickbait]" */
+.clickbait-indicator-text {
+  color: #FF8C00; /* DarkOrange - visible but not too harsh */
+  font-weight: bold;
+  font-size: 0.8em; /* Slightly smaller than the surrounding text */
+  margin-right: 5px; /* Space between the flag text and the original content */
+  display: inline-block; /* Ensures it behaves well with layout */
+  vertical-align: middle; /* Aligns nicely with text if the parent uses inline elements */
+  cursor: default; /* Indicate it's not interactive itself */
+  /* Prevent user selection of the indicator text */
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+}
+
+/* Optional: If you want to slightly dim the flagged content (use cautiously) */
+/*
+.potential-clickbait-flagged > *:not(.clickbait-indicator-text) {
+  opacity: 0.85;
+}
+*/
